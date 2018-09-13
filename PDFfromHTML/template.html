@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style type="text/css">
+        body {
+            font-family: "Arial";
+        }
+
+        .pageContainer {
+            margin: 0 25px;
+        }
+
+        .box {
+            border: 2px solid #000;
+        }
+
+        .thinBox {
+            border: 1px solid #000;
+        }
+
+        .boxBottomOpen {
+            border-top: 2px solid #000;
+            border-left: 2px solid #000;
+            border-right: 2px solid #000;
+        }
+
+        .topThinLine {
+            border-top: 1px solid #000;
+        }
+
+        .leftThinLine {
+            border-left: 1px solid #000;
+        }
+
+        .bottomThinLine {
+            border-bottom: 1px solid #000;
+        }
+
+        .bottomLine {
+            border-bottom: 2px solid #000;
+        }
+
+        .rightThinLine {
+            border-right: 1px solid #000;
+        }
+
+        .rightLine {
+            border-right: 2px solid #000;
+        }
+
+        .thinPadding {
+            padding-left: 4px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+        }
+
+        .noRightPadding {
+            padding-right: 0;
+        }
+
+        .noLeftPadding {
+            padding-left: 0px;
+        }
+
+
+        .tabPadding {
+            padding-left: 50px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+        }
+
+        .keepSpace:after {
+            content: "\00a0";
+        }
+
+        .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+            min-height: 0;
+        }
+
+        .heightFull {
+            height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pageContainer" style="font-size:10px;">
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8" style='font-size:12px;'>
+                <div class="row">
+                    <div class="col-sm-6" style="padding-left:60px;">
+                        Client#: #############
+                    </div>
+                    <div class="col-sm-6" style="padding-left:120px;">
+                        Info
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2" style='font-size:20px;'>
+                <strong class="font-italic">US INC</strong>
+                <span style="font-size:7px;">TM</span>
+            </div>
+            <div class="col-sm-8 text-center font-weight-bold" style='font-size:21px;'>
+                CERTIFICATE
+            </div>
+            <div class="col-sm-2 boxBottomOpen">
+                <div class="row" style='font-size:7px; margin-top:2px;'>
+                    <div class="col-sm-12 text-center">
+                        DATE (MM/DD/YYYY)
+                    </div>
+                </div>
+                <div class="row" style='font-size:10px; margin-top:2px;'>
+                    <div class="col-sm-12 text-center font-weight-bold">
+                        2/17/2099
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row boxBottomOpen font-weight-bold">
+            <div class="col-sm-12">
+                <div class="row bottomThinLine">
+                    <div class="col-sm-12" style="font-size:10px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed nec tincidunt dui. Praesent ut facilisis eros.
+                        Nunc gravida condimentum ipsum. Ut in faucibus est,
+                        sed faucibus ligula. Quisque elit magna, porta at lobortis at, ornare ac orci.
+                        Nullam laoreet interdum sapien non vestibulum.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12" style="font-size:10px;">
+                        IMPORTANT: Pellentesque eget metus libero. Praesent pretium odio leo, a finibus arcu tristique in.
+                        Suspendisse nulla lectus, accumsan at faucibus nec, luctus eu quam. Aenean maximus aliquam ornare.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row box font-weight-bold">
+            <div class="col-sm-12">
+                <div class="row bottomThinLine">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6 thinPadding rightThinLine" style="font-size:6px;">
+                                Test
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding" style='font-size:6px;'>
+                                        Field:
+                                    </div>
+                                    <div class="col-sm-10 thinPadding">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 thinPadding rightThinLine">
+                                {{test here}}
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-3 noRightPadding" style='font-size:6px;'>
+                                        Phone 1:
+                                    </div>
+                                    <div class="col-sm-4 thinPadding rightThinLine">
+                                        ###########
+                                    </div>
+                                    <div class="col-sm-2 thinPadding" style='font-size:6px;'>
+                                        Phone 2:
+                                    </div>
+                                    <div class="col-sm-3 thinPadding">
+                                        ###########
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 thinPadding rightThinLine">
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding" style='font-size:6px;'>
+                                    </div>
+                                    <div class="col-sm-10 thinPadding keepSpace">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 thinPadding rightThinLine">
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-10 rightThinLine text-center keepSpace">
+                                        <span style='font-size:7px;'></span>
+                                    </div>
+                                    <div class="col-sm-2 text-center keepSpace">
+                                        <span style='font-size:7px;'></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 thinPadding rightThinLine">
+                            </div>
+                            <div class="col-sm-6 thinPadding">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding keepSpace">
+                                        <span style='font-size:7px;'></span>
+                                    </div>
+                                    <div class="col-sm-8 thinPadding rightThinLine">
+                                    </div>
+                                    <div class="col-sm-2 thinPadding">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6 thinPadding rightThinLine" style="font-size:6px;">
+                                Identification
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding keepSpace">
+                                        <span style='font-size:7px;'>Test 1:</span>
+                                    </div>
+                                    <div class="col-sm-8 thinPadding rightThinLine">
+                                    </div>
+                                    <div class="col-sm-2 thinPadding">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 tabPadding rightThinLine">
+                               
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding keepSpace">
+                                        <span style='font-size:7px;'>Test 2:</span>
+                                    </div>
+                                    <div class="col-sm-8 thinPadding rightThinLine keepSpace">
+                                    </div>
+                                    <div class="col-sm-2 thinPadding keepSpace">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 tabPadding rightThinLine">
+                                
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding keepSpace">
+                                        <span style='font-size:7px;'>Test 3:</span>
+                                    </div>
+                                    <div class="col-sm-8 thinPadding rightThinLine keepSpace">
+                                    </div>
+                                    <div class="col-sm-2 thinPadding keepSpace">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 tabPadding rightThinLine">
+                            </div>
+                            <div class="col-sm-6 thinPadding bottomThinLine">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding keepSpace">
+                                        <span style='font-size:7px;'>Test 4:</span>
+                                    </div>
+                                    <div class="col-sm-8 thinPadding rightThinLine keepSpace">
+                                    </div>
+                                    <div class="col-sm-2 thinPadding keepSpace">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 tabPadding rightThinLine">
+                                
+                            </div>
+                            <div class="col-sm-6 thinPadding">
+                                <div class="row">
+                                    <div class="col-sm-2 noRightPadding keepSpace">
+                                        <span style='font-size:7px;'>Test 5:</span>
+                                    </div>
+                                    <div class="col-sm-8 thinPadding rightThinLine keepSpace">
+                                    </div>
+                                    <div class="col-sm-2 thinPadding keepSpace">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row font-weight-bold">
+            <div class="col-sm-6 thinPadding">
+                BOX 1
+            </div>
+            <div class="col-sm-6 thinPadding">
+                Box 2
+            </div>
+        </div>
+        <div class="row box font-weight-bold">
+            <div class="col-sm-6 tabPadding rightLine">
+                <div class="keepSpace">
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row bottomLine" style='font-size:9px;'>
+                    <div class="col-sm-12">
+                        <div class="keepSpace">
+                        </div>
+                        <div>
+                            In vitae nisl ut leo porta tempus et a dolor. Morbi tempor turpis dictum ex vehicula, ac congue felis tempus.
+                            Aliquam malesuada fermentum magna semper posuere. Aliquam erat volutpat. 
+                            Phasellus sagittis, elit malesuada mattis pharetra, diam tellus condimentum metus, in bibendum ipsum dui at odio. 
+                            Nulla accumsan suscipit dui, vel volutpat velit sagittis a.
+                            Aliquam pellentesque ex quis quam porta malesuada. Fusce euismod turpis lectus. .
+                        </div>
+                        <div class="keepSpace">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style='font-size:8px;'>
+                    <div class="col-sm-12 thinPadding">
+                        ###TEST###
+                        <br />
+                        <img src="{{PATH}}signature.jpg" height="25" style="margin: 3px 0;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="font-weight-bold" style='font-size:9px;'>
+            <div class="row">
+                <div class="col-sm-7 keepSpace">
+                </div>
+                <div class="col-sm-5 thinPadding">
+                    &copy; 1988-2099 My CORPORATION. All rights reserved.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2 thinPadding">
+                    Bottom
+                </div>
+                <div class="col-sm-1">
+                    1 of 1
+                </div>
+                <div class="col-sm-9 thinPadding">
+                    Nullam semper posuere leo nec malesuada. 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-9 tabPadding">
+                    #########################
+                </div>
+                <div class="col-sm-3">
+                    %%%%%%%
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
